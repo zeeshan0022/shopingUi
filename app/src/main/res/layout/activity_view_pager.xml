@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    tools:context=".viewPager">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/Dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+        <ImageButton
+            android:id="@+id/back_but"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/back"
+            android:background="@drawable/next_back"
+            android:visibility="invisible"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <Button
+                android:id="@+id/finish_but"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:src="@drawable/next"
+                android:text="finish"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins_bold"
+                android:background="@drawable/finish_back"
+                android:layout_gravity="bottom"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/next_but"
+                android:layout_width="60dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/next"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="10dp"
+                android:background="@drawable/back_back" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

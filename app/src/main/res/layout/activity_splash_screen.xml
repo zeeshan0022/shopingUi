@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/White"
+    tools:context=".SplashScreen">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_rawRes="@raw/start_anim"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_gravity="bottom"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            app:lottie_rawRes="@raw/loading_"
+            app:lottie_autoPlay="true"
+            android:background="@color/White"
+            app:lottie_loop="true"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/splash_back"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="made by LEKHLIFI MOAHMMED"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/White"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="13sp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lekhlifi51@gmail.com"
+                android:textSize="13sp"
+                android:textColor="@color/White"
+                android:fontFamily="@font/poppins_semibold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

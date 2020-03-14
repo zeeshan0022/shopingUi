@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="40dp"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/about_app_back"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/close3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/close"
+                android:layout_marginBottom="-15dp"
+                android:layout_gravity="right"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About the app"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_extrabold"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 1.0"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_extrabold"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open source Shop app ui, any developer cen use it and customize it to create its own shop app, the app includes a professional ui design, more animations, also store some data which i work it with shared preferences and more stuffs you will discover it when you use the app .\n\nthis is just the first version of the app and i will add a lot of things in the future\n\nthe app developed with java, using some libraries\nby the way i am just a beginner android developer, i work for this small project to practice my knowledge and all of what i learn in the android app development and UI/UX design ."
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_margin="30dp"
+                android:textSize="11sp"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

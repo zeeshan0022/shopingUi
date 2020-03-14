@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/item_added_back"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal"
+        android:elevation="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shoes_nike"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nike Air Max 270 React ENG"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="196"
+                        android:layout_marginRight="5dp"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:textSize="20sp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@+id/title"/>
+                    <TextView
+                        android:id="@+id/dollar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/price"
+                        android:layout_marginTop="-5dp"
+                        android:text="$"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/shipping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/dollar"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_marginTop="5dp"
+                        android:text="Free shipping"
+                        android:textSize="10dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QTY  :"
+                        android:layout_marginLeft="12dp"
+                        android:textSize="15sp"/>
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17sp"/>
+                    <ImageButton
+                        android:id="@+id/dropDrown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/drop_down"
+                        android:background="@android:color/transparent"
+                        android:layout_marginLeft="8dp"/>
+                    <ImageButton
+                        android:id="@+id/dropUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/drop_up"
+                        android:background="@android:color/transparent"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+                    <ImageButton
+                        android:id="@+id/removeItem"
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/delete_but"
+                        android:src="@drawable/ic_delete_forever_black_24dp"
+                        android:tint="@color/Light_brown"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
